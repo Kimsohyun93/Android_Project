@@ -1,0 +1,2 @@
+rootProject.name='S2T_KIOSK'
+include ':app'

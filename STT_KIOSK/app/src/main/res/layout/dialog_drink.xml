@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/drink_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/drink_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="디저트 변경"
+            android:textColor="#4A4A4A"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/drink_close_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#66232323" />
+
+    <TableLayout
+        android:id="@+id/drink_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="9"
+        android:background="#ffffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/drink_menu1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_colar" />
+
+                <TextView
+                    android:id="@+id/drink_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="콜라"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_ciderr" />
+
+                <TextView
+                    android:id="@+id/drink_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="사이다"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_colarl" />
+
+                <TextView
+                    android:id="@+id/drink_name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="콜라(L)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 200원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_ciderl" />
+
+                <TextView
+                    android:id="@+id/drink_name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="사이다(L)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 200원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_milk" />
+
+                <TextView
+                    android:id="@+id/drink_name5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="우유"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/drink_menu6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_americano" />
+
+                <TextView
+                    android:id="@+id/drink_name6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="아메리카노"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 300원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_iceamericano" />
+
+                <TextView
+                    android:id="@+id/drink_name7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="아이스 아메리카노"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/drink_price7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 300원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_iceamericanol" />
+
+                <TextView
+                    android:id="@+id/drink_name8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="아이스 아메리카노(L)"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/drink_price8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 800원"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_cafelatte" />
+
+                <TextView
+                    android:id="@+id/drink_name9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="카페라떼"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 700원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_icecaffelatte" />
+
+                <TextView
+                    android:id="@+id/drink_name10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="아이스 카페라떼"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 700원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/drink_menu11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_icedtea" />
+
+                <TextView
+                    android:id="@+id/drink_name11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="아이스티"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 500원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_lemonade" />
+
+                <TextView
+                    android:id="@+id/drink_name12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="레몬에이드"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 800원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_milkshakestrawberry" />
+
+                <TextView
+                    android:id="@+id/drink_name13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="쉐이크(딸기)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 400원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img14"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_milkshakevanilla" />
+
+                <TextView
+                    android:id="@+id/drink_name14"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="쉐이크(바닐라)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price14"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 400원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_milkshakechoco" />
+
+                <TextView
+                    android:id="@+id/drink_name15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="쉐이크(초코)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 400원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/drink_menu16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img16"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_hotchoco" />
+
+                <TextView
+                    android:id="@+id/drink_name16"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="핫초코"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price16"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 300원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img17"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_orangejuice" />
+
+                <TextView
+                    android:id="@+id/drink_name17"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="오렌지주스(PET)"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price17"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 800원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img18"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_volvic" />
+
+                <TextView
+                    android:id="@+id/drink_name18"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="볼빅"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price18"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img19"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drink_treviplain" />
+
+                <TextView
+                    android:id="@+id/drink_name19"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="트레비 플레인"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price19"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drink_menu20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/drink_img20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3.5dp"
+                    android:layout_weight="3"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/none" />
+
+                <TextView
+                    android:id="@+id/drink_name20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="무드링크"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drink_price20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:padding="0dp"
+                    android:text="+ 0원"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/drink_apply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/blackbackground"
+        android:text="적용하기"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</LinearLayout>
